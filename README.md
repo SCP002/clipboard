@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.org/atotto/clipboard.svg?branch=master)](https://travis-ci.org/atotto/clipboard)
+[![Build Status](https://travis-ci.org/SCP002/clipboard.svg?branch=master)](https://travis-ci.org/SCP002/clipboard)
 
-[![GoDoc](https://godoc.org/github.com/atotto/clipboard?status.svg)](http://godoc.org/github.com/atotto/clipboard)
+[![GoDoc](https://godoc.org/github.com/SCP002/clipboard?status.svg)](http://godoc.org/github.com/SCP002/clipboard)
 
 # Clipboard for Go
 
@@ -8,7 +8,7 @@ Provide copying and pasting to the Clipboard for Go.
 
 Build:
 
-    $ go get github.com/atotto/clipboard
+    $ go get github.com/SCP002/clipboard
 
 Platforms:
 
@@ -19,7 +19,7 @@ Platforms:
 
 Document: 
 
-* http://godoc.org/github.com/atotto/clipboard
+* http://godoc.org/github.com/SCP002/clipboard
 
 Notes:
 
@@ -34,13 +34,13 @@ TODO:
 
 paste shell command:
 
-    $ go get github.com/atotto/clipboard/cmd/gopaste
+    $ go get github.com/SCP002/clipboard/cmd/gopaste
     $ # example:
     $ gopaste > document.txt
 
 copy shell command:
 
-    $ go get github.com/atotto/clipboard/cmd/gocopy
+    $ go get github.com/SCP002/clipboard/cmd/gocopy
     $ # example:
     $ cat document.txt | gocopy
 
