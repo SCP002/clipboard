@@ -66,7 +66,9 @@ func readAll() (string, error) {
 		return "", err
 	}
 
-	text := syscall.UTF16ToString((*[1 << 48]uint16)(unsafe.Pointer(l))[:])
+	// Using 1 << 29 (536870912) as an optimal buffer size
+	// according to UTF16PtrToString() in https://github.com/lxn/win/blob/master/win.go
+	text := syscall.UTF16ToString((*[1 << 29]uint16)(unsafe.Pointer(l))[:])
 
 	r, _, err := globalUnlock.Call(h)
 	if r == 0 {
